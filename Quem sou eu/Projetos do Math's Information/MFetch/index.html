@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math's Information: MFetch</title>
+
+  <style>
+      body {
+        background-color: black;
+        color: white;
+      }
+
+      
+      h1, h2, h3, h4 {
+        font-family: 'Courier Prime', monospace; 
+      }
+
+      
+      a {
+        color: #00FF00; 
+        text-decoration: none; 
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      nav {
+  border: 1px solid #00FF00;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+li {
+  border-bottom: 1px dashed #00FF00;
+  padding: 5px 0;
+}
+
+    </style>
+</head>
+<body>
+<h1>MFetch</h1>
+<p></p>
+<h3>O MFetch é um dos meus projetos que fiz enquanto estava entediado, você provavelmente no Linux World 
+    deve ter visto eu recomendar neofetch ou até fastfetch no tópico Linux World, mas, eu decidi criar o meu 
+    próprio fetch, já que alguns fetch ou eram demorados, ou eram mais pesados e bem... Eu queria algo leve, 
+    simples e até mesmo útil e então criei o MFetch e bem, infelizmente o MFetch não está disponível para todas 
+    as distros Linux, ele até funciona se tiver certos serviços como dpkg, systemd, NetworkManager ou até xrandr
+    só que só parcialmente mesmo, afinal nem toda distro vai conseguir ter esses certos requisitos, mas, garanto que 
+    posso tentar fazer com que ele seja compatível até com windows, mas no momento está sendo mais disponível para distros
+    baseadas em Debian/Ubuntu.
+</h3>
+<p></p>
+<h2>O que o MFetch faz?</h2>
+<h3>O MFetch ele faz a mesma coisa que o screenfetch e o fastfetch, a única diferença dele é que ele além de ser mais leve e mais 
+    rápido contém algumas informações que esses fetch normalmente não possui, como por exemplo o MFetch pode te mostrar se você 
+    está conectado na rede tor ou não.
+</h3>
+<p></p>
+<h2>Instalação do MFetch:</h2>
+<p></p>
+<h3>Primeiro passo é clonar o repositório github, que sim deixei disponível no meu github.</h3>
+<img src="mfetch.png" width="760" height="360">
+<h3>Comando: git clone https://github.com/Ex3cutor76-V1/MFetch.git</h3>
+<p></p>
+<h3>Segundo passo é literalmente entrar no repositório e veja se possui o arquivo "mfetch" que vai estar em verde, como sendo possível 
+    ser executado, mas relaxa, isso é opcional.
+</h3>
+<img src="mfetch2.png" width="760" height="360">
+<h3>comando: cd MFetch/</h3>
+<p></p>
+<h3>Terceiro passo é mover esse "mfetch" para o local de comandos do Linux.</h3>
+<img src="mfetch3.png" width="760" height="360">
+<h3>Comando: sudo mv mfetch /usr/local/bin/</h3>
+<p></p>
+<h3>E prontinho agora você pode usar, só escrever: mfetch</h3>
+<h3>Logo irá aparecer isso:</h3>
+<img src="mfetch4.png" width="760" height="360">
+<h3>Bem simples não é? Eu sei que algumas coisas realmente faltam... Como por alguma coisa pra colorir a parte de memória RAM e o disco rígido 
+    mas de resto, ele está bem melhor assim por enquanto, mas garanto que pode haver atualizações.
+</h3>
+<p></p>
+<h2>Opcional:</h2>
+<h3>Depois disso você pode apagar a pasta: rm -rf MFetch/</h3>
+<p></p>
+
+</body>
+</html>
