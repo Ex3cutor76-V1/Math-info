@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math's Information: logs</title>
+
+  <style>
+      body {
+        background-color: black;
+        color: white;
+      }
+
+      
+      h1, h2, h3, h4 {
+        font-family: 'Courier Prime', monospace; 
+      }
+
+      
+      a {
+        color: #00FF00; 
+        text-decoration: none; 
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      nav {
+  border: 1px solid #00FF00;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+li {
+  border-bottom: 1px dashed #00FF00;
+  padding: 5px 0;
+}
+
+    </style>
+</head>
+<body>
+    <h1>Como ver logs no Linux:</h1>
+    <p></p>
+<h2>Certo certo, aqui no site falamos muito de segurança de fato... Mas como falar de segurança sem citar os logs?
+    Afinal... Os logs são os registros do sistema.
+</h2>
+<p></p>
+<h2>Afinal, o que de fato é log?:</h2>
+<h3>Antes de iniciar um comando que mostra as logs do sistema, é preciso entender primeiro o que é uma log, e bem 
+    em resumo é só o registro do sistema, no caso é o log que registra as coisas que você fez no seu computador como:
+    horário de logou, horário que desligou, qual app ou até software que você executou e inclusive ele registra erros
+    no sistema também.
+</h3>
+<p></p>
+<h2>journalctl:</h2>
+<h3>O journalctl é um dos comandos que vai te dar acesso aos logs e de forma bem profunda e 
+    aqui está alguns comandos bem básicos:</h3>
+<p></p>
+<h3>journalctl: Com este comando você vê todos os logs, literalmente, todos os logs.</h3>
+<h3>journalctl -e: Com este comando ele irá mostrar logs mais recentes.</h3>
+<h3>journalctl -f: Mostra os logs em tempo real.</h3>
+<h3>journalctl -u nome-do-serviço: Filtra os tipos de logs por nome dos serviços.</h3>
+<h3>journalctl -p palavra: Basicamente filtra os logs por alguma palavra.</h3>
+
+<h3>Sobre o "journalctl -p" eu recomendo honestamente que nas palavras use:</h3>
+<table>
+<tr>
+<td>emerg</td>
+<tr></tr>
+<td>alert</td>
+<tr></tr>
+<td>crit</td>
+<tr></tr>
+<td>err</td>
+<tr></tr>
+<td>warning</td>
+<tr></tr>
+<td>info</td>
+<tr></tr>
+<td>debug</td>
+</tr>
+</table>
+
+<h3>Porque sinceramente, fica mais fácil identificar erros e corrigir.</h3>
+<p></p>
+
+</body>
+</html>
