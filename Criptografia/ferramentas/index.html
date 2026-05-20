@@ -43,75 +43,17 @@ li {
 <h1>Ferramentas para criptografia:</h1>
 <p></p>
 <h2>Olá caro visitante! Bem, já apresentei um pouco sobre os tipos de criptografia, mas... Quais as ferramentas 
-    para isto? Bem... Neste subtópico é o que veremos.
-</h2>
-<p></p>
-<h2>GnuPG/GPG:</h2>
-<h3>O GNUPG ou também GPG é uma ferramenta que usa diferentes tipos de criptografia como RSA, ECC, AES e até usa 
-    HASH, como SHA256 e até mesmo SHA512 para criptografar arquivos, a sigla GNUPG significa: GNU Privacy Guard
-    significando que ela serve especificamente para segurança de arquivos.
-</h3>
-<h2>Como utilizar:</h2>
-<h4>Aviso: Isso foi feito no Linux, infelizmente não tem como eu poder ensinar por Windows, mas irá ser deixado a 
-    ferramenta de instalação tanto para windows quanto para Linux.
-</h4>
-<img src="gpg-1.png" width="360" height="160">
-<h3>Aqui criei uma pasta para testes, para mostrar a vocês como funciona o uso básico pelo menos... Percebe-se que temos 
-    o arquivo chamado de "OLA.txt" que dentro do arquivo txt está escrito "HELLO WORLD!", mas e agora? Como criptografamos?
-    Com o GPG?, bem abaixo está a resposta.
-</h3>
-<img src="gpg-2.png" width="360" height="160">
-<h3>Como podem ver, usei o comando: gpg -c OLA.txt.</h3>
-<h3>A flag "-c" significa algo como "crypted", assim criptografando o arquivo, que logo após você usar esse comando em qualquer
-    arquivo que você quiser criptografar, ele vai te pedir pra colocar uma senha e sim se caso a senha for fraca ele vai te avisar
-    e até aconselhando que a senha tenha pelo menos 8 caracteres... Só que não é obrigatório então relaxa.
-</h3>
-<h3>Outra coisa que vocês podem perceber é que agora temos 2 arquivos, sendo um que está criptografado e o outro totalmente vulnerável,
-    o que está criptografa termina com .gpg, então já sabemos quem está criptografado e adivinha? Sim se você usar o comando "cat" no
-    arquivo gpg, ele irá mostrar códigos ilegíveis, até você descriptografar, quer fazer o teste? Venha comigo.
-</h3>
-<img src="gpg-3.png" width="660" height="260">
-<h3>Percebe-se que após criptografar o arquivo ele mostrou o "HELLO WORLD!" de uma forma que não dá pra compreender? Pois é... Essa é a 
-    criptografia do GPG, que inclusive é uma ferramenta antiga e explorada até hoje, mas agora... Vamos descriptografar e sim eu apaguei o
-    arquivo original que seria o "OLA.txt", afinal... Vamos ver a mensagem mesmo criptografado após a descriptografia.
-</h3>
-<img src="gpg-4.png" width="660" height="260">
-<h3>Pois é, conseguimos descriptografar... E bem... Se você perceber foi bem simples... Só usamos o comando: gpg -d OLA.txt.gpg e pela lógica 
-    que ainda é em inglês a flag "-d" seria algo como "decrypt" que seria descriptografar, bem simples né? E bem ele só mostra o que está escrito
-    mas não de fato entrega o arquivo inteiro, isso é até bom para quem quer enviar um arquivo confidencial para alguém.
-</h3>
-
-<h2>Formas de instalação:</h2>
-<h4>Aviso: Na parte de instalação no Linux só vai servir para distros de Debian ou Ubuntu ou baseadas, entretanto, podem tentar instalar normalmente no 
-    seu sistema que pode funcionar com o mesmo nome sendo "gnupg".
-</h4>
-<h3>Linux: sudo apt install gnupg </h3>
-<h3>Windows: <a href="https://www.gpg4win.org/">gpg4win (O único lugar onde dá pra instalar o GnuPG)</a></h3>
-<h3>Termux: pkg install gnupg</h3>
+    para isto? Bem... Neste subtópico é o que veremos, escolha a ferramenta que deseja aprender:</h2>
 <p></p>
 
-<h2>Ccrypt:</h2>
-<h3>Ccrypt também é uma ferramenta de criptografia, só que bem simples, não é tão segura assim quanto o gpg, mas
-    ela de fato criptografa arquivos, por mais que é uma criptografia bem simples, entretanto, o lado bom é que é 
-    bem mais leve e simples do que o gpg, funcionando até em hardware antigo, inclusive a criptografia do ccrypt é 
-    simétrica, então tipo... A senha de criptografar é a mesma senha para criptografar.
-</h3>
-<h2>Instalação: </h2>
-<h3>Bem antes de mostrar os testes, só pra avisar que vai ser usado o mesmo arquivo que criamos no teste anterior.</h3>
-<img src="ccrypt-1.png" width="360" height="260">
-<h3>Como podem ver, foi bem simples, assim como no gpg e bem... O comando usado foi esse: ccrypt -e OLA.txt que bem
-    na mesma lógica que o gpg, o ccrypt também usa uma flag única para se referir a criptografar e descriptografar, sendo o 
-    "-e" que significa "encrypt", mas agora... Vamos descriptografar?
-</h3>
-<img src="ccrypt-2.png" width="360" height="260">
-<h3>Percebe-se que sim para descriptografar foi a mesma coisa que o gpg, no caso: ccrypt -d OLA.txt, só que ao em vez dele nos mostrar a 
-    mensagem diretamente, ele já nos entrega o arquivo para lermos.
-</h3>
-<h2>Instalação:</h2>
-<h3>Linux: sudo apt install ccrypt</h3>
-<h3>Windows: No caso o ccrypt não tem versão pra Windows... É mais recomendado usar em WSL (Windows Subsystem Linux)</h3>
-<h3>Termux: pkg install ccrypt</h3>
-<p></p>
+<nav>
+<ul class="menu">
+<li><a href="ccrypt/index.html">Ccrypt</a></li>
+
+<li><a href="gpg/index.html">GnuPG/GPG</a></li>
+
+</ul>
+</nav>
 
 </body>
 </html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math's Information: Hash e criptografia</title>
+
+  <style>
+      body {
+        background-color: black;
+        color: white;
+      }
+
+      
+      h1, h2, h3, h4 {
+        font-family: 'Courier Prime', monospace; 
+      }
+
+      
+      a {
+        color: #00FF00; 
+        text-decoration: none; 
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      nav {
+  border: 1px solid #00FF00;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+li {
+  border-bottom: 1px dashed #00FF00;
+  padding: 5px 0;
+}
+
+    </style>
+</head>
+<body>
+<h1>A diferença entre Hash e criptografia:</h1>
+<p></p>
+<h2>Bem antes de fazermos uma análise, é preciso entender o que é ambos:</h2>
+
+<h3>Hash: O valor fixo gerado a partir de dados usandos uma função matemática que serve para 
+    identificar ou verificar informações de forma rápida e segura então resumidamente... É o 
+    resumo de um dado.
+</h3>
+
+<h3>Criptografia: É o processo de transformar informações em um formato ilegível para quem não
+    possui a chave.
+</h3>
+<p></p>
+<h2>Certo e qual a diferença?:</h2>
+<h3>A diferença é que o hash diferente da criptografia ele identifica e verifica dados, enquanto a 
+    criptografia protege dados para que só os individuos que tenham a chave acessem as informações,
+    outra diferença é a reversibilidade que bem.. no hash isso não existe, uma vez que não dá pra 
+    voltar ao dado original, enquanto a criptografia dá pra decifrar se tiver a chave correta.
+</h3>
+<p></p>
+<h2>Onde é usado cada um?:</h2>
+<h3>O hash é muito utilizado em senhas armazenadas e verificação de arquivos, já a criptografia é usada 
+    em mensagens privadas e transações bancárias (Isso normalmente, não que ele não seja usado para outras 
+    coisas como criptografar um HD).
+</h3>
+<p></p>
+<h2>Como identificar:</h2>
+<h2>Hash:</h2>
+<h3>1) Sempre possui tamanho fixo, mesmo se o dado original for enorme ou minúsculo.</h3>
+<h3>2) Não é possível voltar ao dado original.</h3>
+<h3>3) O Hash é normalmente usado em verificação de integridade, autenticar senhas e gerar 
+    assinaturas digitais. 
+</h3>
+<p></p>
+<h2>Criptografia:</h2>
+<h3>1) O tamanho do dado criptografado geralmende depende do tamanho do dado original.</h3>
+<h3>2) É possível descriptografar se você tiver a chave.</h3>
+<h3>3) Normalmente usado para proteger comunicações (Exemplo: Email), armazenar dados sensíveis e enviar mensagens
+    privadas.
+</h3>
+<p></p>
+<h2>Exemplos de Hash e criptografia:</h2>
+<h2>Hash:</h2>
+<h3>SHA-256, bcrypt, Argon2, MD5, SHA-1, assinaturas digitais e identificadores de blocos em blockchain.</h3>
+<h2>Criptografia:</h2>
+<h3>end-to-end encryption (usada no Whatsapp ou signal), dados de cartões de crédito ou bancários armazenados em bancos,
+VPN e conexões HTTPS (Exemplo: TLS/SSL), arquivos protegidos por senha (Exemplo: AES, RSA e ChaCha20).
+</h3>
+<p></p>
+
+<h2>Dica fácil para identificar:</h2>
+<h3>Se não der para recuperar o original --> Hash</h3>
+<h3>Se dá para recuperar com a chave correta --> Criptografia.</h3>
+
+</body>
+</html>

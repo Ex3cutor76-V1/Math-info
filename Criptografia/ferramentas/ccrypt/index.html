@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math's Information: Crypt-Tools</title>
+
+  <style>
+      body {
+        background-color: black;
+        color: white;
+      }
+
+      
+      h1, h2, h3, h4 {
+        font-family: 'Courier Prime', monospace; 
+      }
+
+      
+      a {
+        color: #00FF00; 
+        text-decoration: none; 
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      nav {
+  border: 1px solid #00FF00;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+li {
+  border-bottom: 1px dashed #00FF00;
+  padding: 5px 0;
+}
+
+    </style>
+</head>
+<body>
+<h1>Ccrypt:</h1>
+<h2>Ccrypt também é uma ferramenta de criptografia, só que bem simples, não é tão segura assim quanto o gpg, mas
+    ela de fato criptografa arquivos, por mais que é uma criptografia bem simples, entretanto, o lado bom é que é 
+    bem mais leve e simples do que o gpg, funcionando até em hardware antigo, inclusive a criptografia do ccrypt é 
+    simétrica, então tipo... A senha de criptografar é a mesma senha para criptografar.
+</h2>
+<p></p>
+
+<h2>Instalação e como utilizar: </h2>
+<h3>Bem antes de mostrar os testes, só pra avisar que vai ser usado o mesmo arquivo que criamos no teste anterior.</h3>
+<img src="ccrypt-1.png" width="360" height="260">
+<h3>Como podem ver, foi bem simples, assim como no gpg e bem... O comando usado foi esse: ccrypt -e OLA.txt que bem
+    na mesma lógica que o gpg, o ccrypt também usa uma flag única para se referir a criptografar e descriptografar, sendo o 
+    "-e" que significa "encrypt", mas agora... Vamos descriptografar?
+</h3>
+<img src="ccrypt-2.png" width="360" height="260">
+<h3>Percebe-se que sim para descriptografar foi a mesma coisa que o gpg, no caso: ccrypt -d OLA.txt, só que ao em vez dele nos mostrar a 
+    mensagem diretamente, ele já nos entrega o arquivo para lermos.
+</h3>
+<h2>Instalação:</h2>
+<h3>Linux: sudo apt install ccrypt</h3>
+<h3>Windows: No caso o ccrypt não tem versão pra Windows... É mais recomendado usar em WSL (Windows Subsystem Linux)</h3>
+<h3>Termux: pkg install ccrypt</h3>
+<p></p>
+
+</body>
+</html>
